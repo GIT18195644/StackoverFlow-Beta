@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edu.lk | Get Membership</title>
+  <link rel="shortcut icon" href="./Edu/favicon.ico" type="image/x-icon">
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./Edu/plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="./Edu/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="./Edu/dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition register-page">
+  <div class="register-box">
+    <div class="register-logo">
+      <a href="./register.html"><b>Edu.</b>LK</a>
+    </div>
+
+    <div class="card">
+      <div class="card-body register-card-body">
+        <p class="login-box-msg">Register a new membership</p>
+
+        <form action="./Edu/php/SubscribeUserAccount.php" method="POST">
+          <p>Full Name</p>
+          <!-- uname -->
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Full name" id="uname" name="uname" required>
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-user"></span>
+              </div>
+            </div>
+          </div>
+          <p>Email Address</p>
+          <!-- uemail -->
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Email" id="uemail" name="uemail" required>
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-envelope"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>I am..</p>
+              <!-- utype -->
+              <div class="input-group mb-3">
+                <select class="form-control" id="utype" name="utype" required>
+                  <option>- Select -</option>
+                  <option value="Student">Student</option>
+                  <option value="Instructor">Instructor</option>
+                </select>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-user-tag"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <p>Phone Number</p>
+              <!-- uphone -->
+              <div class="input-group mb-3">
+                <input type="tel" class="form-control" placeholder="Phone" id="uphone" name="uphone" required>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-phone"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <p>NIC/Passport Number</p>
+              <!-- unic -->
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="NIC" id="unic" name="unic" required>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-id-card"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>Gender</p>
+              <!-- usex -->
+              <div class="input-group mb-3">
+                <select class="form-control" id="usex" name="usex" required>
+                  <option>- Select -</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-venus-mars"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <p>Birth Day</p>
+              <!-- ubod -->
+              <div class="input-group mb-3">
+                <input type="date" class="form-control" placeholder="Birth Day" id="ubod" name="ubod" required>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-birthday-cake"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <p>Age</p>
+              <!-- uage -->
+              <div class="input-group mb-3">
+                <input type="number" class="form-control" placeholder="Age" id="uage" name="uage" required>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-user-clock"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <p>Zip/ Postal Code</p>
+              <!-- uzip -->
+              <div class="input-group mb-3">
+                <input type="number" class="form-control" placeholder="Postal/Zip Code" id="uzip" name="uzip" required>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-mail-bulk"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <div class="icheck-primary">
+                <input type="checkbox" id="agreeTerms" name="terms" value="agree" required>
+                <label for="agreeTerms">
+                  I agree to the <a href="#">terms & conditions</a>
+                </label>
+              </div>
+            </div>
+            <!-- /.col -->
+            <div class="col-4">
+              <button type="submit" class="btn btn-primary btn-block">Subscribe Now!</button>
+            </div>
+            <!-- /.col -->
+          </div>
+        </form>
+
+        <a href="./index.html" class="text-center">I already have a membership</a>
+      </div>
+      <!-- /.form-box -->
+    </div><!-- /.card -->
+  </div>
+  <!-- /.register-box -->
+
+  <!-- jQuery -->
+  <script src="./Edu/plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="./Edu/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="./Edu/dist/js/adminlte.min.js"></script>
+</body>
+
+</html>
