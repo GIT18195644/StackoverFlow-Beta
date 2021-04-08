@@ -9,5 +9,8 @@ Username: super.admin@edu.lk
 Password: Admin@1234
 
 # Host
+
+[https://newserv.freewha.com/]
+
 Username: edu-lk.ueuo.com
 Password: edu.lk
