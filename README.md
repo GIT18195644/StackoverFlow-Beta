@@ -7,3 +7,7 @@ https://drive.google.com/file/d/1Y22gYLt_bWNUO1ioIcPa6Q9uC7jrIK3K/view?usp=shari
 # Super Admin Login Credentials
 Username: super.admin@edu.lk
 Password: Admin@1234
+
+# Host
+Username: edu-lk.ueuo.com
+Password: edu.lk
